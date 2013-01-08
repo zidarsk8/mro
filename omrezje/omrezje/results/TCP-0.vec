@@ -1,0 +1,152 @@
+version 2
+run TCP-0-20130108-18:01:41-8147
+attr configname TCP
+attr datetime 20130108-18:01:41
+attr experiment TCP
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Omrezje
+attr processid 8147
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+vector 7  Omrezje.streznik.wlan[0].mgmt  dataQueueLen:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "data queue length, vector"
+vector 21  Omrezje.klient1.wlan[0].mgmt  dataQueueLen:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "data queue length, vector"
+vector 35  Omrezje.klient2.wlan[0].mgmt  dataQueueLen:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "data queue length, vector"
+vector 49  Omrezje.klient3.wlan[0].mgmt  dataQueueLen:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "data queue length, vector"
+vector 55  Omrezje.ap.wlan[0].mgmt  dataQueueLen:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "data queue length, vector"
+vector 62  Omrezje.streznik.wlan[0].mac  RadioState  ETV
+attr enum  "IDLE=0, RECV=1, SLEEP=3, TRANSMIT=2"
+attr enumname  RadioState
+vector 61  Omrezje.streznik.wlan[0].mac  State  ETV
+attr enum  "BACKOFF=3, DEFER=1, IDLE=0, RECEIVE=8, WAITACK=4, WAITAIFS=2, WAITCTS=6, WAITMULTICAST=5, WAITSIFS=7"
+attr enumname  Ieee80211Mac
+vector 68  Omrezje.klient1.wlan[0].mac  RadioState  ETV
+attr enum  "IDLE=0, RECV=1, SLEEP=3, TRANSMIT=2"
+attr enumname  RadioState
+vector 67  Omrezje.klient1.wlan[0].mac  State  ETV
+attr enum  "BACKOFF=3, DEFER=1, IDLE=0, RECEIVE=8, WAITACK=4, WAITAIFS=2, WAITCTS=6, WAITMULTICAST=5, WAITSIFS=7"
+attr enumname  Ieee80211Mac
+vector 74  Omrezje.klient2.wlan[0].mac  RadioState  ETV
+attr enum  "IDLE=0, RECV=1, SLEEP=3, TRANSMIT=2"
+attr enumname  RadioState
+vector 73  Omrezje.klient2.wlan[0].mac  State  ETV
+attr enum  "BACKOFF=3, DEFER=1, IDLE=0, RECEIVE=8, WAITACK=4, WAITAIFS=2, WAITCTS=6, WAITMULTICAST=5, WAITSIFS=7"
+attr enumname  Ieee80211Mac
+vector 80  Omrezje.klient3.wlan[0].mac  RadioState  ETV
+attr enum  "IDLE=0, RECV=1, SLEEP=3, TRANSMIT=2"
+attr enumname  RadioState
+vector 79  Omrezje.klient3.wlan[0].mac  State  ETV
+attr enum  "BACKOFF=3, DEFER=1, IDLE=0, RECEIVE=8, WAITACK=4, WAITAIFS=2, WAITCTS=6, WAITMULTICAST=5, WAITSIFS=7"
+attr enumname  Ieee80211Mac
+vector 86  Omrezje.ap.wlan[0].mac  RadioState  ETV
+attr enum  "IDLE=0, RECV=1, SLEEP=3, TRANSMIT=2"
+attr enumname  RadioState
+vector 85  Omrezje.ap.wlan[0].mac  State  ETV
+attr enum  "BACKOFF=3, DEFER=1, IDLE=0, RECEIVE=8, WAITACK=4, WAITAIFS=2, WAITCTS=6, WAITMULTICAST=5, WAITSIFS=7"
+attr enumname  Ieee80211Mac
+vector 9  Omrezje.streznik.wlan[0].radio  bitrate:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, vector"
+attr unit  bps
+vector 11  Omrezje.streznik.wlan[0].radio  radioState:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "radio state (enum), vector"
+vector 10  Omrezje.streznik.wlan[0].radio  channelNo:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "channel no, vector"
+vector 23  Omrezje.klient1.wlan[0].radio  bitrate:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, vector"
+attr unit  bps
+vector 25  Omrezje.klient1.wlan[0].radio  radioState:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "radio state (enum), vector"
+vector 24  Omrezje.klient1.wlan[0].radio  channelNo:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "channel no, vector"
+vector 37  Omrezje.klient2.wlan[0].radio  bitrate:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, vector"
+attr unit  bps
+vector 39  Omrezje.klient2.wlan[0].radio  radioState:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "radio state (enum), vector"
+vector 38  Omrezje.klient2.wlan[0].radio  channelNo:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "channel no, vector"
+vector 51  Omrezje.klient3.wlan[0].radio  bitrate:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, vector"
+attr unit  bps
+vector 53  Omrezje.klient3.wlan[0].radio  radioState:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "radio state (enum), vector"
+vector 52  Omrezje.klient3.wlan[0].radio  channelNo:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "channel no, vector"
+vector 57  Omrezje.ap.wlan[0].radio  bitrate:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, vector"
+attr unit  bps
+vector 59  Omrezje.ap.wlan[0].radio  radioState:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "radio state (enum), vector"
+vector 58  Omrezje.ap.wlan[0].radio  channelNo:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "channel no, vector"
+7	0	0	0
+9	0	0	2000000
+10	0	0	0
+11	0	0	0
+21	0	0	0
+23	0	0	2000000
+24	0	0	0
+25	0	0	0
+35	0	0	0
+37	0	0	2000000
+38	0	0	0
+39	0	0	0
+49	0	0	0
+51	0	0	2000000
+52	0	0	0
+53	0	0	0
+55	0	0	0
+57	0	0	2000000
+58	0	0	0
+59	0	0	0
+61	0	0	0
+61	0	0	0
+62	0	0	0
+62	0	0	0
+67	0	0	0
+67	0	0	0
+68	0	0	0
+68	0	0	0
+73	0	0	0
+73	0	0	0
+74	0	0	0
+74	0	0	0
+79	0	0	0
+79	0	0	0
+80	0	0	0
+80	0	0	0
+85	0	0	0
+85	0	0	0
+86	0	0	0
+86	0	0	0

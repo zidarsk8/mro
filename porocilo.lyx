@@ -475,7 +475,7 @@ status open
 
 
 \backslash
-label{Shema80211}
+label{Shema80211Nic}
 \end_layout
 
 \end_inset
@@ -495,7 +495,7 @@ predstavlja brezžično mrežno kartico (IWirelessNic - Wireless Network Interfa
  Gre za eno kartico, na kateri vsak vnos v tabelo wlan[] predstavlja eno
  anteno oz.
  oddajnik.
- Vsebovani moduli so prikazani na Sliki 
+ Vsebovani moduli wlan[] enote so prikazani na Sliki 
 \begin_inset ERT
 status open
 
@@ -503,12 +503,13 @@ status open
 
 
 \backslash
-ref{Shema80211}
+ref{Shema80211Nic}
 \end_layout
 
 \end_inset
 
- (modul Ieee80211Radio) je fizični nivo wlan-a.
+.
+ Modul Ieee80211Radio je fizični nivo wlan-a.
  Oddaja in sprejema brezžične signale ter jih posreduje enoti 'mac' (modul
  Ieee80211Mac).
  Mac za sprejeti paket skrbi, da se je pravilno sprejel, oz.
@@ -916,7 +917,7 @@ ChannelControl
 \end_layout
 
 \begin_layout Standard
-vsako omrežje z mobilnimi napravami ali brezžičnimi omrežji.
+Vsako omrežje z mobilnimi napravami ali brezžičnimi omrežji.
  Glede na lokacijo elementov določa kateri so v dosegu, da lahko komunicirajo
  med sabo oz.
  povzročajo inteferenco.
@@ -929,7 +930,13 @@ IPv4NetworkConfigurator
 \end_layout
 
 \begin_layout Standard
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Ta modula dodeli IP naslove (lahko ročno ali avtomatično) in vzpostavi statično
+ usmerjanjepo IPv4 omrežju.
+ Module, ki predstavljajo omrežne enote prepoznava po @node lastnosti, zato
+ jo morajo vse enote vsebovati.
+ Prav tako jeod njih pričakovano, da imajo vsaka svon InterfaceTable, za
+ routerje pa še RoutingTable.
+ 
 \end_layout
 
 \begin_layout Chapter

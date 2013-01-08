@@ -1,0 +1,3 @@
+package omrezje;
+
+@license(LGPL);

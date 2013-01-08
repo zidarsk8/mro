@@ -1,0 +1,9 @@
+Omrežje je sestavljeno iz treh klientov in enega strežnika. Vsi so povezani na skupno dostopno točko. Klienti ustvarjajo HTTP zahtevke z naključnim časovnim razmikom. Strežnik odgovarja na HTTP zahtevke.
+Simulacija protokola HTTP je poenostavljena. Klienti ne vzpostavljajo več vzporednih povezav.
+
+
+Merjenje časa potovanja paketa
+
+Da merjenje deluje pravilno, smo morali uporabiti "dataTransferMode = object".
+
+Na sliki vidimo, da so časi večinoma enaki, redki pa so veliko večji. Do tega lahko pride če več klientov istočasno uporablja omrežje, ali pa če pride do več kolizij.

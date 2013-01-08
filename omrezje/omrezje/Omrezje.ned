@@ -1,0 +1,60 @@
+//
+// Copyright (C) 2005 Andras Varga
+//
+// This program is free software; you can redistribute it and/or
+// modify it under the terms of the GNU General Public License
+// as published by the Free Software Foundation; either version 2
+// of the License, or (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with this program; if not, write to the Free Software
+// Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
+//
+
+package omrezje;
+
+import inet.networklayer.autorouting.ipv4.IPv4NetworkConfigurator;
+import inet.nodes.inet.WirelessHost;
+import inet.nodes.wireless.AccessPoint;
+import inet.world.radio.ChannelControl;
+
+
+network Omrezje
+{
+    parameters:
+        @display("bgl=2");
+    submodules:
+        streznik: WirelessHost {
+            @display("r=,,#707070;p=360,241");
+            wlan[*].mgmtType = "Ieee80211MgmtSTASimplified";
+        }
+        klient1: WirelessHost {
+            @display("r=,,#707070;p=97,144");
+            wlan[*].mgmtType = "Ieee80211MgmtSTASimplified";
+        }
+        klient2: WirelessHost {
+            @display("r=,,#707070;p=97,241");
+            wlan[*].mgmtType = "Ieee80211MgmtSTASimplified";
+        }
+        klient3: WirelessHost {
+            @display("r=,,#707070;p=91,343");
+            wlan[*].mgmtType = "Ieee80211MgmtSTASimplified";
+        }
+        ap: AccessPoint {
+            @display("p=230,215;r=,,#707070");
+            wlan[*].mgmtType = "Ieee80211MgmtAPSimplified";
+        }
+        channelControl: ChannelControl {
+            numChannels = 2;
+            @display("p=61,46");
+        }
+        configurator: IPv4NetworkConfigurator {
+            config = xml("<config><interface hosts='*' address='145.236.x.x' netmask='255.255.0.0'/></config>");
+            @display("p=170,47");
+        }
+}
