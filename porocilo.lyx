@@ -317,6 +317,14 @@ Shema modela 802.11
 \end_layout
 
 \begin_layout Section
+Delovanje
+\end_layout
+
+\begin_layout Standard
+V zgledu imamo vedno eno dostopno točko ter dva ali več odjemalcev.
+\end_layout
+
+\begin_layout Section
 Gradniki
 \end_layout
 

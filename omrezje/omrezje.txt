@@ -11,19 +11,25 @@ Na sliki vidimo, da so časi večinoma enaki, redki pa so veliko večji. Do tega
 
 Trajanje zahtevka
 
+Trajanje zahtevka merijo klienti tako, da si zapomnijo čas, ko so začeli vzpostavljati povezavo. Zavzema torej čas od prvega SYN paketa do zaprtja povezave.
+
 Podobno kot čas potovanja paketa. Sklepamo lahko, da se razlikujeta le za konstantni faktor, saj vzpostavitev povezave in izmenjava podatkov ponavadi zavzema približno enako število paketov. Pri večji obremenjenosti omrežja lahko hitro naraste (paketi so počasnejši, večja verjetnost da se izgubijo).
 
 
 Dolžina vrste v oddajnikih
+
+Klienti in strežnik na povezovalni plasti vodijo med drugim tudi statistiko dolžine čakalne vrste paketov.
 
 Vrste v oddajnikih ne smejo postati prevelike. Pri manjših vrednostih le upočasnujejo potovanje paketov, v ekstremnih primerih pa bi lahko prišlo tudi do zapolnitve vrste in izgube paketa (npr. če vrsta stalno narašča, ali pa če veliko klientov na enkrat odda veliko paketov).
 
 
 Število izgubljenih paketov zaradi vrste
 
-To bi pomenilo preobremenjeno omrežje. V naših simulacijah ni prišlo do te vrste izgube paketov.
+To bi pomenilo preobremenjeno omrežje. V naših simulacijah ni prišlo do te vrste izgube paketov, ker smo dovolili dovol velike vrste (14 - del konfiguracije). Če bi do tega prišlo, bi se situacija samo še poslabšala, saj bi oddajniki morali pakete ponovno poslati (za to skrbijo višje plasti).
 
 
 Izgubljeni paketi zaradi napake v prenosu
 
-...
+Enega od razlogov izgube paketov smo že omenili. Veliko bolj pogost razlog pa so razne napake v prenosu. Te napake prikazuje naslednji graf.
+
+Na vsake 50 prejetih paketov se izračuna delež z napako v prenosu (to predstavlja vsaka točka v grafu).
