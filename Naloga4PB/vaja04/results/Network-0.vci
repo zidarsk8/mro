@@ -1,0 +1,79 @@
+file 15199106 1355870399                                        
+version 2
+run Network-0-20121218-23:39:40-426284
+attr configname Network
+attr datetime 20121218-23:39:40
+attr experiment Network
+attr inifile seminarska1.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network seminarska1
+attr processid 426284
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+vector 9  seminarska1.router.switch.myQueue  serverCount:vector  ETV
+attr interpolationmode  none
+attr title  "servers in use, vector"
+vector 11  seminarska1.server1.servUnit  serverCount:vector  ETV
+attr interpolationmode  none
+attr title  "servers in use, vector"
+vector 16  seminarska1.server2.servUnit  serverCount:vector  ETV
+attr interpolationmode  none
+attr title  "servers in use, vector"
+vector 21  seminarska1.server3.servUnit  serverCount:vector  ETV
+attr interpolationmode  none
+attr title  "servers in use, vector"
+vector 4  seminarska1.router.rx  travelTime:vector  ETV
+attr interpolationmode  none
+attr title  "the duration of the packet, vector"
+attr unit  s
+vector 10  seminarska1.router.switch.myQueue  waitTime:vector  ETV
+attr interpolationmode  none
+attr title  "queueing time at dequeue, vector"
+attr unit  s
+vector 25  seminarska1.server3.rx  travelTime:vector  ETV
+attr interpolationmode  none
+attr title  "the duration of the packet, vector"
+attr unit  s
+vector 22  seminarska1.server3.servUnit  waitTime:vector  ETV
+attr interpolationmode  none
+attr title  "queueing time at dequeue, vector"
+attr unit  s
+vector 2  seminarska1.client.rx  travelTime:vector  ETV
+attr interpolationmode  none
+attr title  "the duration of the packet, vector"
+attr unit  s
+vector 20  seminarska1.server2.rx  travelTime:vector  ETV
+attr interpolationmode  none
+attr title  "the duration of the packet, vector"
+attr unit  s
+vector 17  seminarska1.server2.servUnit  waitTime:vector  ETV
+attr interpolationmode  none
+attr title  "queueing time at dequeue, vector"
+attr unit  s
+vector 15  seminarska1.server1.rx  travelTime:vector  ETV
+attr interpolationmode  none
+attr title  "the duration of the packet, vector"
+attr unit  s
+vector 12  seminarska1.server1.servUnit  waitTime:vector  ETV
+attr interpolationmode  none
+attr title  "queueing time at dequeue, vector"
+attr unit  s
+2	2318 1325948 18 688329 0.05392 9999.86407569144 36212 0.000512 0.016384 142.60633600002 1.3045732474883
+4	1328266 2651927 3 688333 0.000448 9999.970953162992 72425 0.000448 0.016384 158.82976000011 1.3118413414405
+9	3980193 4289920 0 688335 0 9999.971953162992 144851 0 1 72638 72638
+10	8270113 2220116 4 688334 0.000448 9999.970953162992 72425 0 0.000993628007 0.107900327608 6.9943337117094e-005
+11	10490229 227053 0 688188 0 9997.65878262846 7419 0 1 4241 4241
+12	10717282 120384 104 688149 1.425532388671 9997.15878262846 3709 0 0.807462662983 115.62850755865 36.494777020117
+15	10837666 139480 103 688148 1.425532388671 9997.15878262846 3709 0.000448 0.000448 1.661632 0.00074441113600003
+16	10977146 1113716 0 688340 0 10000.072401162992 36385 0 1 19253 19253
+17	12090862 570528 28 688339 0.318676077375 9999.972401162992 18192 0 0.099410773315 28.137059026268 1.0577845423438
+20	12661390 684196 27 688338 0.318676077375 9999.972401162992 18192 0.000448 0.000448 8.1500159999963 0.0036512071679987
+21	13345586 876674 0 688321 0 9999.86205169144 28625 0 1 14312 14312
+22	14222260 438331 9 688320 0.001896 9999.81205169144 14312 0 0 0 0
+25	14660591 538515 8 688319 0.001896 9999.81205169144 14312 0.000448 0.000448 6.4117759999977 0.0028724756479991

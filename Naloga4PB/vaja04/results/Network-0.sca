@@ -1,0 +1,116 @@
+version 2
+run Network-0-20121218-23:39:40-426284
+attr configname Network
+attr datetime 20121218-23:39:40
+attr experiment Network
+attr inifile seminarska1.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network seminarska1
+attr processid 426284
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar seminarska1.client.tx 	transmitError:count 	0
+attr interpolationmode  none
+attr title  "drop event, count"
+scalar seminarska1.client.rx 	travelTime:mean 	0.0039380961007405
+attr interpolationmode  none
+attr title  "the duration of the packet, mean"
+attr unit  s
+scalar seminarska1.client.rx 	transmitError:count 	0
+attr interpolationmode  none
+attr title  "drop event, count"
+scalar seminarska1.router.rx 	travelTime:mean 	0.0021930239558179
+attr interpolationmode  none
+attr title  "the duration of the packet, mean"
+attr unit  s
+scalar seminarska1.router.rx 	transmitError:count 	0
+attr interpolationmode  none
+attr title  "drop event, count"
+scalar seminarska1.router.tx0 	transmitError:count 	0
+attr interpolationmode  none
+attr title  "drop event, count"
+scalar seminarska1.router.tx1 	transmitError:count 	0
+attr interpolationmode  none
+attr title  "drop event, count"
+scalar seminarska1.router.tx2 	transmitError:count 	0
+attr interpolationmode  none
+attr title  "drop event, count"
+scalar seminarska1.router.tx3 	transmitError:count 	0
+attr interpolationmode  none
+attr title  "drop event, count"
+scalar seminarska1.router.switch.myQueue 	waitTime:mean 	1.4898215755333e-006
+attr interpolationmode  none
+attr title  "queueing time at dequeue, mean"
+attr unit  s
+scalar seminarska1.router.switch.myQueue 	serverCount:mean 	0.50146702473576
+attr interpolationmode  none
+attr title  "servers in use, mean"
+scalar seminarska1.router.switch.myQueue 	serverCount:max 	1
+attr interpolationmode  none
+attr title  "servers in use, max"
+scalar seminarska1.server1.servUnit 	waitTime:mean 	0.031175116624062
+attr interpolationmode  none
+attr title  "queueing time at dequeue, mean"
+attr unit  s
+scalar seminarska1.server1.servUnit 	serverCount:mean 	0.57164038280092
+attr interpolationmode  none
+attr title  "servers in use, mean"
+scalar seminarska1.server1.servUnit 	serverCount:max 	1
+attr interpolationmode  none
+attr title  "servers in use, max"
+scalar seminarska1.server1.tx 	transmitError:count 	0
+attr interpolationmode  none
+attr title  "drop event, count"
+scalar seminarska1.server1.rx 	travelTime:mean 	0.000448
+attr interpolationmode  none
+attr title  "the duration of the packet, mean"
+attr unit  s
+scalar seminarska1.server1.rx 	transmitError:count 	0
+attr interpolationmode  none
+attr title  "drop event, count"
+scalar seminarska1.server2.servUnit 	waitTime:mean 	0.0015466721100631
+attr interpolationmode  none
+attr title  "queueing time at dequeue, mean"
+attr unit  s
+scalar seminarska1.server2.servUnit 	serverCount:mean 	0.52914662635702
+attr interpolationmode  none
+attr title  "servers in use, mean"
+scalar seminarska1.server2.servUnit 	serverCount:max 	1
+attr interpolationmode  none
+attr title  "servers in use, max"
+scalar seminarska1.server2.tx 	transmitError:count 	0
+attr interpolationmode  none
+attr title  "drop event, count"
+scalar seminarska1.server2.rx 	travelTime:mean 	0.00044799999999979
+attr interpolationmode  none
+attr title  "the duration of the packet, mean"
+attr unit  s
+scalar seminarska1.server2.rx 	transmitError:count 	0
+attr interpolationmode  none
+attr title  "drop event, count"
+scalar seminarska1.server3.servUnit 	waitTime:mean 	0
+attr interpolationmode  none
+attr title  "queueing time at dequeue, mean"
+attr unit  s
+scalar seminarska1.server3.servUnit 	serverCount:mean 	0.49998253275109
+attr interpolationmode  none
+attr title  "servers in use, mean"
+scalar seminarska1.server3.servUnit 	serverCount:max 	1
+attr interpolationmode  none
+attr title  "servers in use, max"
+scalar seminarska1.server3.tx 	transmitError:count 	0
+attr interpolationmode  none
+attr title  "drop event, count"
+scalar seminarska1.server3.rx 	travelTime:mean 	0.00044799999999984
+attr interpolationmode  none
+attr title  "the duration of the packet, mean"
+attr unit  s
+scalar seminarska1.server3.rx 	transmitError:count 	0
+attr interpolationmode  none
+attr title  "drop event, count"

@@ -1,0 +1,5 @@
+Za delo potrebujes omnet++ in INET. Navodila za INET:
+http://lrss.fri.uni-lj.si/sl/teaching/MRO/vaje2012-2013/vaja4/INET_namestitev.pdf
+
+Porocilo je v lyx formatu, za urejanje potrebujes: http://www.lyx.org/
+Izbral sem ga ker se compila preko lateka, ce komu ni vsec, lahko spremenimo.
