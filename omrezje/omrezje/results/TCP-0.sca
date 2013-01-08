@@ -1,0 +1,941 @@
+version 2
+run TCP-0-20130108-20:10:29-10000
+attr configname TCP
+attr datetime 20130108-20:10:29
+attr experiment TCP
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Omrezje
+attr processid 10000
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Omrezje.streznik.networkLayer.arp 	failedResolution:count 	0
+attr title  "ARP failed resolutions, count"
+scalar Omrezje.streznik.networkLayer.arp 	initiatedResolution:count 	0
+attr title  "ARP initiated resolutions, count"
+scalar Omrezje.streznik.networkLayer.arp 	sentReplies:count 	0
+attr title  "ARP replies sent, count"
+scalar Omrezje.streznik.networkLayer.arp 	sentReq:count 	0
+attr title  "ARP request sent, count"
+scalar Omrezje.streznik.wlan[0].mgmt 	dropPkByQueue:count 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, count"
+scalar Omrezje.streznik.wlan[0].mgmt 	dropPkByQueue:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, sum(packetBytes)"
+scalar Omrezje.streznik.wlan[0].mgmt 	dataQueueLen:max 	4
+attr interpolationmode  sample-hold
+attr title  "data queue length, max"
+scalar Omrezje.streznik.wlan[0].mgmt 	dataQueueLen:timeavg 	0.041299306952282
+attr interpolationmode  sample-hold
+attr title  "data queue length, timeavg"
+scalar Omrezje.streznik.wlan[0].mac 	"number of received packets" 	2031
+scalar Omrezje.streznik.wlan[0].mac 	"number of collisions" 	89
+scalar Omrezje.streznik.wlan[0].mac 	"number of internal collisions" 	0
+scalar Omrezje.streznik.wlan[0].mac 	"number of retry for AC 0" 	990
+scalar Omrezje.streznik.wlan[0].mac 	"sent and receive bites" 	4467784
+scalar Omrezje.streznik.wlan[0].mac 	"sent packet within AC 0" 	1974
+scalar Omrezje.streznik.wlan[0].mac 	"sent in TXOP " 	0
+scalar Omrezje.streznik.wlan[0].mac 	"sentWithoutRetry AC 0" 	1657
+scalar Omrezje.streznik.wlan[0].mac 	"numGivenUp AC 0" 	11
+scalar Omrezje.streznik.wlan[0].mac 	"numDropped AC 0" 	0
+scalar Omrezje.streznik.wlan[0].radio 	lossRate:min 	0
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, min"
+scalar Omrezje.streznik.wlan[0].radio 	lossRate:max 	0.06
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, max"
+scalar Omrezje.streznik.wlan[0].radio 	lossRate:timeavg 	0.009379484903179
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, timeavg"
+scalar Omrezje.streznik.wlan[0].radio 	radioState:count 	52685
+attr interpolationmode  sample-hold
+attr title  "radio state (enum), count"
+statistic Omrezje.streznik.wlan[0].radio 	channelNo:histogram
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "channel no, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	1
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+scalar Omrezje.streznik.wlan[0].radio 	bitrate:min 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, min"
+attr unit  bps
+scalar Omrezje.streznik.wlan[0].radio 	bitrate:max 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, max"
+attr unit  bps
+scalar Omrezje.streznik.wlan[0].radio 	bitrate:timeavg 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, timeavg"
+attr unit  bps
+scalar Omrezje.streznik.tcpApp[0] 	sentPk:count 	223
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, count"
+scalar Omrezje.streznik.tcpApp[0] 	sentPk:sum(packetBytes) 	396956
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, sum(packetBytes)"
+scalar Omrezje.streznik.tcpApp[0] 	rcvdPk:count 	223
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, count"
+scalar Omrezje.streznik.tcpApp[0] 	rcvdPk:sum(packetBytes) 	167554
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, sum(packetBytes)"
+statistic Omrezje.streznik.tcpApp[0] 	endToEndDelay:histogram
+field count 223
+field mean 0.054615506551964
+field stddev 0.34742605816232
+field sum 12.179257961088
+field sqrsum 27.461656570598
+field min 0.012081508066
+field max 3.030293134697
+attr interpolationmode  none
+attr source  messageAge(rcvdPk)
+attr title  "end-to-end delay, histogram"
+attr unit  s
+bin	-INF	0
+bin	-1.48680826804	0
+bin	-1.2869324421285	0
+bin	-1.0870566162171	0
+bin	-0.8871807903056	0
+bin	-0.68730496439413	0
+bin	-0.48742913848267	0
+bin	-0.2875533125712	0
+bin	-0.087677486659733	220
+bin	0.11219833925173	0
+bin	0.3120741651632	0
+bin	0.51194999107467	0
+bin	0.71182581698613	0
+bin	0.9117016428976	0
+bin	1.1115774688091	0
+bin	1.3114532947205	0
+bin	1.511329120632	0
+bin	1.7112049465435	0
+bin	1.9110807724549	0
+bin	2.1109565983664	0
+bin	2.3108324242779	0
+bin	2.5107082501893	0
+bin	2.7105840761008	0
+bin	2.9104599020123	3
+bin	3.1103357279237	0
+bin	3.3102115538352	0
+bin	3.5100873797467	0
+bin	3.7099632056581	0
+bin	3.9098390315696	0
+bin	4.1097148574811	0
+bin	4.3095906833925	0
+bin	4.509466509304	0
+scalar Omrezje.klient1.networkLayer.arp 	failedResolution:count 	0
+attr title  "ARP failed resolutions, count"
+scalar Omrezje.klient1.networkLayer.arp 	initiatedResolution:count 	1
+attr title  "ARP initiated resolutions, count"
+scalar Omrezje.klient1.networkLayer.arp 	sentReplies:count 	0
+attr title  "ARP replies sent, count"
+scalar Omrezje.klient1.networkLayer.arp 	sentReq:count 	1
+attr title  "ARP request sent, count"
+scalar Omrezje.klient1.wlan[0].mgmt 	dropPkByQueue:count 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, count"
+scalar Omrezje.klient1.wlan[0].mgmt 	dropPkByQueue:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, sum(packetBytes)"
+scalar Omrezje.klient1.wlan[0].mgmt 	dataQueueLen:max 	1
+attr interpolationmode  sample-hold
+attr title  "data queue length, max"
+scalar Omrezje.klient1.wlan[0].mgmt 	dataQueueLen:timeavg 	0.0001054578492456
+attr interpolationmode  sample-hold
+attr title  "data queue length, timeavg"
+scalar Omrezje.klient1.wlan[0].mac 	"number of received packets" 	197
+scalar Omrezje.klient1.wlan[0].mac 	"number of collisions" 	1008
+scalar Omrezje.klient1.wlan[0].mac 	"number of internal collisions" 	0
+scalar Omrezje.klient1.wlan[0].mac 	"number of retry for AC 0" 	113
+scalar Omrezje.klient1.wlan[0].mac 	"sent and receive bites" 	281688
+scalar Omrezje.klient1.wlan[0].mac 	"sent packet within AC 0" 	210
+scalar Omrezje.klient1.wlan[0].mac 	"sent in TXOP " 	0
+scalar Omrezje.klient1.wlan[0].mac 	"sentWithoutRetry AC 0" 	201
+scalar Omrezje.klient1.wlan[0].mac 	"numGivenUp AC 0" 	16
+scalar Omrezje.klient1.wlan[0].mac 	"numDropped AC 0" 	0
+scalar Omrezje.klient1.wlan[0].radio 	lossRate:min 	0
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, min"
+scalar Omrezje.klient1.wlan[0].radio 	lossRate:max 	0.58
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, max"
+scalar Omrezje.klient1.wlan[0].radio 	lossRate:timeavg 	0.073366264133284
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, timeavg"
+scalar Omrezje.klient1.wlan[0].radio 	radioState:count 	55279
+attr interpolationmode  sample-hold
+attr title  "radio state (enum), count"
+statistic Omrezje.klient1.wlan[0].radio 	channelNo:histogram
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "channel no, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	1
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+scalar Omrezje.klient1.wlan[0].radio 	bitrate:min 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, min"
+attr unit  bps
+scalar Omrezje.klient1.wlan[0].radio 	bitrate:max 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, max"
+attr unit  bps
+scalar Omrezje.klient1.wlan[0].radio 	bitrate:timeavg 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, timeavg"
+attr unit  bps
+scalar Omrezje.klient1.tcpApp[0] 	numActiveSessions:max 	1
+attr interpolationmode  sample-hold
+attr source  sum(connect)
+attr title  "number of active sessions, max"
+scalar Omrezje.klient1.tcpApp[0] 	numActiveSessions:timeavg 	0.95157366878564
+attr interpolationmode  sample-hold
+attr source  sum(connect)
+attr title  "number of active sessions, timeavg"
+scalar Omrezje.klient1.tcpApp[0] 	numSessions:last 	25
+attr source  sum(connect+1)/2
+attr title  "total number of sessions, last"
+scalar Omrezje.klient1.tcpApp[0] 	sentPk:count 	24
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, count"
+scalar Omrezje.klient1.tcpApp[0] 	sentPk:sum(packetBytes) 	17907
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, sum(packetBytes)"
+scalar Omrezje.klient1.tcpApp[0] 	rcvdPk:count 	24
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, count"
+scalar Omrezje.klient1.tcpApp[0] 	rcvdPk:sum(packetBytes) 	33999
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, sum(packetBytes)"
+statistic Omrezje.klient1.tcpApp[0] 	endToEndDelay:histogram
+field count 24
+field mean 0.16613578546158
+field stddev 0.62222476373385
+field sum 3.987258851078
+field sqrsum 9.5671904829463
+field min 0.017545555704
+field max 3.085027645506
+attr interpolationmode  none
+attr source  messageAge(rcvdPk)
+attr title  "end-to-end delay, histogram"
+attr unit  s
+bin	-INF	0
+bin	-1.516195489197	0
+bin	-1.3116966832102	0
+bin	-1.1071978772234	0
+bin	-0.9026990712366	0
+bin	-0.6982002652498	0
+bin	-0.493701459263	0
+bin	-0.2892026532762	0
+bin	-0.0847038472894	23
+bin	0.1197949586974	0
+bin	0.3242937646842	0
+bin	0.528792570671	0
+bin	0.7332913766578	0
+bin	0.9377901826446	0
+bin	1.1422889886314	0
+bin	1.3467877946182	0
+bin	1.551286600605	0
+bin	1.7557854065918	0
+bin	1.9602842125786	0
+bin	2.1647830185654	0
+bin	2.3692818245522	0
+bin	2.573780630539	0
+bin	2.7782794365258	0
+bin	2.9827782425126	1
+bin	3.1872770484994	0
+bin	3.3917758544862	0
+bin	3.596274660473	0
+bin	3.8007734664598	0
+bin	4.0052722724466	0
+bin	4.2097710784334	0
+bin	4.4142698844202	0
+bin	4.618768690407	0
+scalar Omrezje.klient2.networkLayer.arp 	failedResolution:count 	0
+attr title  "ARP failed resolutions, count"
+scalar Omrezje.klient2.networkLayer.arp 	initiatedResolution:count 	1
+attr title  "ARP initiated resolutions, count"
+scalar Omrezje.klient2.networkLayer.arp 	sentReplies:count 	0
+attr title  "ARP replies sent, count"
+scalar Omrezje.klient2.networkLayer.arp 	sentReq:count 	1
+attr title  "ARP request sent, count"
+scalar Omrezje.klient2.wlan[0].mgmt 	dropPkByQueue:count 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, count"
+scalar Omrezje.klient2.wlan[0].mgmt 	dropPkByQueue:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, sum(packetBytes)"
+scalar Omrezje.klient2.wlan[0].mgmt 	dataQueueLen:max 	2
+attr interpolationmode  sample-hold
+attr title  "data queue length, max"
+scalar Omrezje.klient2.wlan[0].mgmt 	dataQueueLen:timeavg 	0.0016645821013473
+attr interpolationmode  sample-hold
+attr title  "data queue length, timeavg"
+scalar Omrezje.klient2.wlan[0].mac 	"number of received packets" 	758
+scalar Omrezje.klient2.wlan[0].mac 	"number of collisions" 	899
+scalar Omrezje.klient2.wlan[0].mac 	"number of internal collisions" 	0
+scalar Omrezje.klient2.wlan[0].mac 	"number of retry for AC 0" 	627
+scalar Omrezje.klient2.wlan[0].mac 	"sent and receive bites" 	1000408
+scalar Omrezje.klient2.wlan[0].mac 	"sent packet within AC 0" 	766
+scalar Omrezje.klient2.wlan[0].mac 	"sent in TXOP " 	0
+scalar Omrezje.klient2.wlan[0].mac 	"sentWithoutRetry AC 0" 	701
+scalar Omrezje.klient2.wlan[0].mac 	"numGivenUp AC 0" 	77
+scalar Omrezje.klient2.wlan[0].mac 	"numDropped AC 0" 	0
+scalar Omrezje.klient2.wlan[0].radio 	lossRate:min 	0
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, min"
+scalar Omrezje.klient2.wlan[0].radio 	lossRate:max 	0.56
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, max"
+scalar Omrezje.klient2.wlan[0].radio 	lossRate:timeavg 	0.092008777040916
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, timeavg"
+scalar Omrezje.klient2.wlan[0].radio 	radioState:count 	55363
+attr interpolationmode  sample-hold
+attr title  "radio state (enum), count"
+statistic Omrezje.klient2.wlan[0].radio 	channelNo:histogram
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "channel no, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	1
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+scalar Omrezje.klient2.wlan[0].radio 	bitrate:min 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, min"
+attr unit  bps
+scalar Omrezje.klient2.wlan[0].radio 	bitrate:max 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, max"
+attr unit  bps
+scalar Omrezje.klient2.wlan[0].radio 	bitrate:timeavg 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, timeavg"
+attr unit  bps
+scalar Omrezje.klient2.tcpApp[0] 	numActiveSessions:max 	1
+attr interpolationmode  sample-hold
+attr source  sum(connect)
+attr title  "number of active sessions, max"
+scalar Omrezje.klient2.tcpApp[0] 	numActiveSessions:timeavg 	0.85635009769254
+attr interpolationmode  sample-hold
+attr source  sum(connect)
+attr title  "number of active sessions, timeavg"
+scalar Omrezje.klient2.tcpApp[0] 	numSessions:last 	82
+attr source  sum(connect+1)/2
+attr title  "total number of sessions, last"
+scalar Omrezje.klient2.tcpApp[0] 	sentPk:count 	82
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, count"
+scalar Omrezje.klient2.tcpApp[0] 	sentPk:sum(packetBytes) 	61387
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, sum(packetBytes)"
+scalar Omrezje.klient2.tcpApp[0] 	rcvdPk:count 	81
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, count"
+scalar Omrezje.klient2.tcpApp[0] 	rcvdPk:sum(packetBytes) 	159637
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, sum(packetBytes)"
+statistic Omrezje.klient2.tcpApp[0] 	endToEndDelay:histogram
+field count 81
+field mean 0.17160506511527
+field stddev 0.52479575632272
+field sum 13.900010274337
+field sqrsum 24.418159036577
+field min 0.016219198242
+field max 3.036452790475
+attr interpolationmode  none
+attr source  messageAge(rcvdPk)
+attr title  "end-to-end delay, histogram"
+attr unit  s
+bin	-INF	0
+bin	-1.4938975978745	0
+bin	-1.2925486917256	0
+bin	-1.0911997855768	0
+bin	-0.8898508794279	0
+bin	-0.68850197327903	0
+bin	-0.48715306713017	0
+bin	-0.2858041609813	0
+bin	-0.084455254832433	69
+bin	0.11689365131643	8
+bin	0.3182425574653	0
+bin	0.51959146361417	0
+bin	0.72094036976303	0
+bin	0.9222892759119	0
+bin	1.1236381820608	0
+bin	1.3249870882096	0
+bin	1.5263359943585	0
+bin	1.7276849005074	0
+bin	1.9290338066562	1
+bin	2.1303827128051	1
+bin	2.331731618954	1
+bin	2.5330805251028	0
+bin	2.7344294312517	0
+bin	2.9357783374006	1
+bin	3.1371272435494	0
+bin	3.3384761496983	0
+bin	3.5398250558472	0
+bin	3.741173961996	0
+bin	3.9425228681449	0
+bin	4.1438717742938	0
+bin	4.3452206804426	0
+bin	4.5465695865915	0
+scalar Omrezje.klient3.networkLayer.arp 	failedResolution:count 	0
+attr title  "ARP failed resolutions, count"
+scalar Omrezje.klient3.networkLayer.arp 	initiatedResolution:count 	1
+attr title  "ARP initiated resolutions, count"
+scalar Omrezje.klient3.networkLayer.arp 	sentReplies:count 	0
+attr title  "ARP replies sent, count"
+scalar Omrezje.klient3.networkLayer.arp 	sentReq:count 	1
+attr title  "ARP request sent, count"
+scalar Omrezje.klient3.wlan[0].mgmt 	dropPkByQueue:count 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, count"
+scalar Omrezje.klient3.wlan[0].mgmt 	dropPkByQueue:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, sum(packetBytes)"
+scalar Omrezje.klient3.wlan[0].mgmt 	dataQueueLen:max 	1
+attr interpolationmode  sample-hold
+attr title  "data queue length, max"
+scalar Omrezje.klient3.wlan[0].mgmt 	dataQueueLen:timeavg 	0.00013952922494883
+attr interpolationmode  sample-hold
+attr title  "data queue length, timeavg"
+scalar Omrezje.klient3.wlan[0].mac 	"number of received packets" 	57
+scalar Omrezje.klient3.wlan[0].mac 	"number of collisions" 	339
+scalar Omrezje.klient3.wlan[0].mac 	"number of internal collisions" 	0
+scalar Omrezje.klient3.wlan[0].mac 	"number of retry for AC 0" 	70
+scalar Omrezje.klient3.wlan[0].mac 	"sent and receive bites" 	86656
+scalar Omrezje.klient3.wlan[0].mac 	"sent packet within AC 0" 	62
+scalar Omrezje.klient3.wlan[0].mac 	"sent in TXOP " 	0
+scalar Omrezje.klient3.wlan[0].mac 	"sentWithoutRetry AC 0" 	52
+scalar Omrezje.klient3.wlan[0].mac 	"numGivenUp AC 0" 	7
+scalar Omrezje.klient3.wlan[0].mac 	"numDropped AC 0" 	0
+scalar Omrezje.klient3.wlan[0].radio 	lossRate:min 	0
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, min"
+scalar Omrezje.klient3.wlan[0].radio 	lossRate:max 	0.24
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, max"
+scalar Omrezje.klient3.wlan[0].radio 	lossRate:timeavg 	0.02042138481981
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, timeavg"
+scalar Omrezje.klient3.wlan[0].radio 	radioState:count 	55275
+attr interpolationmode  sample-hold
+attr title  "radio state (enum), count"
+statistic Omrezje.klient3.wlan[0].radio 	channelNo:histogram
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "channel no, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	1
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+scalar Omrezje.klient3.wlan[0].radio 	bitrate:min 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, min"
+attr unit  bps
+scalar Omrezje.klient3.wlan[0].radio 	bitrate:max 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, max"
+attr unit  bps
+scalar Omrezje.klient3.wlan[0].radio 	bitrate:timeavg 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, timeavg"
+attr unit  bps
+scalar Omrezje.klient3.tcpApp[0] 	numActiveSessions:max 	1
+attr interpolationmode  sample-hold
+attr source  sum(connect)
+attr title  "number of active sessions, max"
+scalar Omrezje.klient3.tcpApp[0] 	numActiveSessions:timeavg 	0.90095835271798
+attr interpolationmode  sample-hold
+attr source  sum(connect)
+attr title  "number of active sessions, timeavg"
+scalar Omrezje.klient3.tcpApp[0] 	numSessions:last 	7
+attr source  sum(connect+1)/2
+attr title  "total number of sessions, last"
+scalar Omrezje.klient3.tcpApp[0] 	sentPk:count 	7
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, count"
+scalar Omrezje.klient3.tcpApp[0] 	sentPk:sum(packetBytes) 	5196
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, sum(packetBytes)"
+scalar Omrezje.klient3.tcpApp[0] 	rcvdPk:count 	7
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, count"
+scalar Omrezje.klient3.tcpApp[0] 	rcvdPk:sum(packetBytes) 	8311
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, sum(packetBytes)"
+statistic Omrezje.klient3.tcpApp[0] 	endToEndDelay:histogram
+field count 7
+field mean 0.48745639072471
+field stddev 1.1250327770813
+field sum 3.412194735073
+field sqrsum 9.2574886270525
+field min 0.017787513768
+field max 3.035183310511
+attr interpolationmode  none
+attr source  messageAge(rcvdPk)
+attr title  "end-to-end delay, histogram"
+attr unit  s
+bin	-INF	0
+bin	-1.4909103846035	0
+bin	-1.2897506648206	0
+bin	-1.0885909450378	0
+bin	-0.8874312252549	0
+bin	-0.68627150547203	0
+bin	-0.48511178568917	0
+bin	-0.2839520659063	0
+bin	-0.082792346123433	5
+bin	0.11836737365943	1
+bin	0.3195270934423	0
+bin	0.52068681322517	0
+bin	0.72184653300803	0
+bin	0.9230062527909	0
+bin	1.1241659725738	0
+bin	1.3253256923566	0
+bin	1.5264854121395	0
+bin	1.7276451319224	0
+bin	1.9288048517052	0
+bin	2.1299645714881	0
+bin	2.331124291271	0
+bin	2.5322840110538	0
+bin	2.7334437308367	0
+bin	2.9346034506196	1
+bin	3.1357631704024	0
+bin	3.3369228901853	0
+bin	3.5380826099682	0
+bin	3.739242329751	0
+bin	3.9404020495339	0
+bin	4.1415617693168	0
+bin	4.3427214890996	0
+bin	4.5438812088825	0
+scalar Omrezje.klient4.networkLayer.arp 	failedResolution:count 	0
+attr title  "ARP failed resolutions, count"
+scalar Omrezje.klient4.networkLayer.arp 	initiatedResolution:count 	1
+attr title  "ARP initiated resolutions, count"
+scalar Omrezje.klient4.networkLayer.arp 	sentReplies:count 	0
+attr title  "ARP replies sent, count"
+scalar Omrezje.klient4.networkLayer.arp 	sentReq:count 	1
+attr title  "ARP request sent, count"
+scalar Omrezje.klient4.wlan[0].mgmt 	dropPkByQueue:count 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, count"
+scalar Omrezje.klient4.wlan[0].mgmt 	dropPkByQueue:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, sum(packetBytes)"
+scalar Omrezje.klient4.wlan[0].mgmt 	dataQueueLen:max 	3
+attr interpolationmode  sample-hold
+attr title  "data queue length, max"
+scalar Omrezje.klient4.wlan[0].mgmt 	dataQueueLen:timeavg 	0.0021608936119991
+attr interpolationmode  sample-hold
+attr title  "data queue length, timeavg"
+scalar Omrezje.klient4.wlan[0].mac 	"number of received packets" 	962
+scalar Omrezje.klient4.wlan[0].mac 	"number of collisions" 	940
+scalar Omrezje.klient4.wlan[0].mac 	"number of internal collisions" 	0
+scalar Omrezje.klient4.wlan[0].mac 	"number of retry for AC 0" 	701
+scalar Omrezje.klient4.wlan[0].mac 	"sent and receive bites" 	1322000
+scalar Omrezje.klient4.wlan[0].mac 	"sent packet within AC 0" 	997
+scalar Omrezje.klient4.wlan[0].mac 	"sent in TXOP " 	0
+scalar Omrezje.klient4.wlan[0].mac 	"sentWithoutRetry AC 0" 	922
+scalar Omrezje.klient4.wlan[0].mac 	"numGivenUp AC 0" 	79
+scalar Omrezje.klient4.wlan[0].mac 	"numDropped AC 0" 	0
+scalar Omrezje.klient4.wlan[0].radio 	lossRate:min 	0
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, min"
+scalar Omrezje.klient4.wlan[0].radio 	lossRate:max 	0.6
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, max"
+scalar Omrezje.klient4.wlan[0].radio 	lossRate:timeavg 	0.10197582293649
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, timeavg"
+scalar Omrezje.klient4.wlan[0].radio 	radioState:count 	55345
+attr interpolationmode  sample-hold
+attr title  "radio state (enum), count"
+statistic Omrezje.klient4.wlan[0].radio 	channelNo:histogram
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "channel no, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	1
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+scalar Omrezje.klient4.wlan[0].radio 	bitrate:min 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, min"
+attr unit  bps
+scalar Omrezje.klient4.wlan[0].radio 	bitrate:max 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, max"
+attr unit  bps
+scalar Omrezje.klient4.wlan[0].radio 	bitrate:timeavg 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, timeavg"
+attr unit  bps
+scalar Omrezje.klient4.tcpApp[0] 	numActiveSessions:max 	1
+attr interpolationmode  sample-hold
+attr source  sum(connect)
+attr title  "number of active sessions, max"
+scalar Omrezje.klient4.tcpApp[0] 	numActiveSessions:timeavg 	0.70433645766205
+attr interpolationmode  sample-hold
+attr source  sum(connect)
+attr title  "number of active sessions, timeavg"
+scalar Omrezje.klient4.tcpApp[0] 	numSessions:last 	110
+attr source  sum(connect+1)/2
+attr title  "total number of sessions, last"
+scalar Omrezje.klient4.tcpApp[0] 	sentPk:count 	110
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, count"
+scalar Omrezje.klient4.tcpApp[0] 	sentPk:sum(packetBytes) 	83064
+attr interpolationmode  none
+attr source  sentPk
+attr title  "packets sent, sum(packetBytes)"
+scalar Omrezje.klient4.tcpApp[0] 	rcvdPk:count 	109
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, count"
+scalar Omrezje.klient4.tcpApp[0] 	rcvdPk:sum(packetBytes) 	185774
+attr interpolationmode  none
+attr source  rcvdPk
+attr title  "packets received, sum(packetBytes)"
+statistic Omrezje.klient4.tcpApp[0] 	endToEndDelay:histogram
+field count 109
+field mean 0.13597611704673
+field stddev 0.46321401070556
+field sum 14.821396758094
+field sqrsum 25.18861570948
+field min 0.015970470274
+field max 3.031529336539
+attr interpolationmode  none
+attr source  messageAge(rcvdPk)
+attr title  "end-to-end delay, histogram"
+attr unit  s
+bin	-INF	0
+bin	-1.4918089628585	0
+bin	-1.2907717051075	0
+bin	-1.0897344473565	0
+bin	-0.8886971896055	0
+bin	-0.6876599318545	0
+bin	-0.4866226741035	0
+bin	-0.2855854163525	0
+bin	-0.0845481586015	99
+bin	0.1164890991495	6
+bin	0.3175263569005	0
+bin	0.5185636146515	0
+bin	0.7196008724025	0
+bin	0.9206381301535	0
+bin	1.1216753879045	0
+bin	1.3227126456555	0
+bin	1.5237499034065	0
+bin	1.7247871611575	1
+bin	1.9258244189085	0
+bin	2.1268616766595	1
+bin	2.3278989344105	0
+bin	2.5289361921615	1
+bin	2.7299734499125	0
+bin	2.9310107076635	1
+bin	3.1320479654145	0
+bin	3.3330852231655	0
+bin	3.5341224809165	0
+bin	3.7351597386675	0
+bin	3.9361969964185	0
+bin	4.1372342541695	0
+bin	4.3382715119205	0
+bin	4.5393087696715	0
+scalar Omrezje.ap.wlan[0].mgmt 	dropPkByQueue:count 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, count"
+scalar Omrezje.ap.wlan[0].mgmt 	dropPkByQueue:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "packets dropped by queue, sum(packetBytes)"
+scalar Omrezje.ap.wlan[0].mgmt 	dataQueueLen:max 	4
+attr interpolationmode  sample-hold
+attr title  "data queue length, max"
+scalar Omrezje.ap.wlan[0].mgmt 	dataQueueLen:timeavg 	0.016913147092523
+attr interpolationmode  sample-hold
+attr title  "data queue length, timeavg"
+scalar Omrezje.ap.wlan[0].mac 	"number of received packets" 	4010
+scalar Omrezje.ap.wlan[0].mac 	"number of collisions" 	1255
+scalar Omrezje.ap.wlan[0].mac 	"number of internal collisions" 	0
+scalar Omrezje.ap.wlan[0].mac 	"number of retry for AC 0" 	196
+scalar Omrezje.ap.wlan[0].mac 	"sent and receive bites" 	7158536
+scalar Omrezje.ap.wlan[0].mac 	"sent packet within AC 0" 	4005
+scalar Omrezje.ap.wlan[0].mac 	"sent in TXOP " 	0
+scalar Omrezje.ap.wlan[0].mac 	"sentWithoutRetry AC 0" 	3816
+scalar Omrezje.ap.wlan[0].mac 	"numGivenUp AC 0" 	0
+scalar Omrezje.ap.wlan[0].mac 	"numDropped AC 0" 	0
+scalar Omrezje.ap.wlan[0].radio 	lossRate:min 	0
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, min"
+scalar Omrezje.ap.wlan[0].radio 	lossRate:max 	0.6
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, max"
+scalar Omrezje.ap.wlan[0].radio 	lossRate:timeavg 	0.12696808941326
+attr interpolationmode  backward-sample-hold
+attr title  "packet loss rate, timeavg"
+scalar Omrezje.ap.wlan[0].radio 	radioState:count 	68719
+attr interpolationmode  sample-hold
+attr title  "radio state (enum), count"
+statistic Omrezje.ap.wlan[0].radio 	channelNo:histogram
+field count 1
+field mean 0
+field stddev -nan
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  sample-hold
+attr title  "channel no, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	0	1
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+scalar Omrezje.ap.wlan[0].radio 	bitrate:min 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, min"
+attr unit  bps
+scalar Omrezje.ap.wlan[0].radio 	bitrate:max 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, max"
+attr unit  bps
+scalar Omrezje.ap.wlan[0].radio 	bitrate:timeavg 	2000000
+attr interpolationmode  sample-hold
+attr title  "tx bitrate, timeavg"
+attr unit  bps

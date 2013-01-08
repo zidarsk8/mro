@@ -37,6 +37,9 @@ MyClient::~MyClient()
 
 void MyClient::initialize(int stage)
 {
+    startZahtevka = -1;
+    trajanjeZahtevkaSignal = registerSignal("trajanjeZahtevka");
+
     TCPGenericCliAppBase::initialize(stage);
     if (stage != 3)
         return;
@@ -75,6 +78,7 @@ void MyClient::handleTimer(cMessage *msg)
     switch (msg->getKind())
     {
         case MSGKIND_CONNECT:
+            startZahtevka = simTime();
             EV << "starting session\n";
             connect(); // active OPEN
 
@@ -148,6 +152,12 @@ void MyClient::socketDataArrived(int connId, void *ptr, cPacket *msg, bool urgen
 void MyClient::socketClosed(int connId, void *ptr)
 {
     TCPGenericCliAppBase::socketClosed(connId, ptr);
+
+    if (startZahtevka != -1) {
+        // Izdracunamo trajanje zahtevka (startZahtevka bi moral biti vedno nastavljen, preverimo za varnost)
+        emit(trajanjeZahtevkaSignal, simTime() - startZahtevka);
+        startZahtevka = -1;
+    }
 
     // start another session after a delay
     if (timeoutMsg)

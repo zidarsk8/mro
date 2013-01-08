@@ -115,6 +115,7 @@ simple MyClient like ITCPApp
         @statistic[endToEndDelay](title="end-to-end delay"; source="messageAge(rcvdPk)"; unit=s; record=histogram,vector; interpolationmode=none);
         @statistic[numActiveSessions](title="number of active sessions"; source="sum(connect)"; record=max,timeavg,vector; interpolationmode=sample-hold);
         @statistic[numSessions](title="total number of sessions"; source="sum(connect+1)/2"; record=last);
+        @statistic[trajanjeZahtevka](title="trajanje zahtevka"; unit=s;record=vector; interpolationmode=none);
     gates:
         input tcpIn @labels(TCPCommand/up);
         output tcpOut @labels(TCPCommand/down);

@@ -38,11 +38,15 @@ network Omrezje
             wlan[*].mgmtType = "Ieee80211MgmtSTASimplified";
         }
         klient2: WirelessHost {
-            @display("r=,,#707070;p=97,241");
+            @display("r=,,#707070;p=97,216");
             wlan[*].mgmtType = "Ieee80211MgmtSTASimplified";
         }
         klient3: WirelessHost {
-            @display("r=,,#707070;p=91,343");
+            @display("r=,,#707070;p=97,282");
+            wlan[*].mgmtType = "Ieee80211MgmtSTASimplified";
+        }
+        klient4: WirelessHost {
+            @display("r=,,#707070;p=97,352");
             wlan[*].mgmtType = "Ieee80211MgmtSTASimplified";
         }
         ap: AccessPoint {

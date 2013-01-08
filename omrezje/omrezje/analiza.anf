@@ -5,18 +5,27 @@
     <inputs name="results/*.sca"/>
   </inputs>
   <datasets>
-    <datasets name="Dataset">
-      <items xsi:type="scave:Add" filterPattern="dataQueueLen:vector" type="VECTOR"/>
-      <items xsi:type="scave:LineChart" name="Dolzina vrste" lineNameFormat="${file}"/>
-    </datasets>
     <datasets name="Cas potovanja">
       <items xsi:type="scave:Add" filterPattern="endToEndDelay:vector" type="VECTOR"/>
       <items xsi:type="scave:LineChart" name="Čas potovanja paketa" lineNameFormat="">
         <properties name="Graph.Title" value="Čas potovanja paketa (end-to-end delay)"/>
       </items>
     </datasets>
+    <datasets name="Trajanje zahtevka">
+      <items xsi:type="scave:Add" filterPattern="trajanjeZahtevka:vector" type="VECTOR"/>
+      <items xsi:type="scave:LineChart" name="" lineNameFormat=""/>
+    </datasets>
+    <datasets name="Queue length">
+      <items xsi:type="scave:Add" filterPattern="dataQueueLen:vector" type="VECTOR"/>
+      <items xsi:type="scave:LineChart" name="" lineNameFormat=""/>
+    </datasets>
+    <datasets name="Queueing time"/>
+    <datasets name="Drop pk by queue">
+      <items xsi:type="scave:Add" filterPattern="dropPkByQueue:count"/>
+      <items xsi:type="scave:BarChart" name=""/>
+    </datasets>
   </datasets>
   <chartSheets>
-    <chartSheets name="default" charts="//@datasets/@datasets.0/@items.1 //@datasets/@datasets.1/@items.1"/>
+    <chartSheets name="default" charts="//@datasets/@datasets.0/@items.1 //@datasets/@datasets.1/@items.1 //@datasets/@datasets.2/@items.1 //@datasets/@datasets.4/@items.1"/>
   </chartSheets>
 </scave:Analysis>

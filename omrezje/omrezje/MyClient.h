@@ -33,6 +33,9 @@ class INET_API MyClient : public TCPGenericCliAppBase
     /** Utility: sends a request to the server */
     virtual void sendRequest();
 
+    simtime_t startZahtevka;
+    simsignal_t trajanjeZahtevkaSignal;
+
   public:
     MyClient();
     virtual ~MyClient();

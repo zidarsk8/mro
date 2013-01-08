@@ -1,9 +1,29 @@
-Omrežje je sestavljeno iz treh klientov in enega strežnika. Vsi so povezani na skupno dostopno točko. Klienti ustvarjajo HTTP zahtevke z naključnim časovnim razmikom. Strežnik odgovarja na HTTP zahtevke.
+Omrežje je sestavljeno iz štirih klientov in enega strežnika. Vsi so povezani na skupno dostopno točko. Klienti ustvarjajo HTTP zahtevke z naključnim časovnim razmikom. Strežnik odgovarja na HTTP zahtevke.
 Simulacija protokola HTTP je poenostavljena. Klienti ne vzpostavljajo več vzporednih povezav.
 
 
 Merjenje časa potovanja paketa
 
-Da merjenje deluje pravilno, smo morali uporabiti "dataTransferMode = object".
+Da merjenje deluje pravilno, smo morali uporabiti "dataTransferMode = object". V privzetem načinu (bytecount) se izvirni paket ne obdrži, in se informacija izgubi.
 
 Na sliki vidimo, da so časi večinoma enaki, redki pa so veliko večji. Do tega lahko pride če več klientov istočasno uporablja omrežje, ali pa če pride do več kolizij.
+
+
+Trajanje zahtevka
+
+Podobno kot čas potovanja paketa. Sklepamo lahko, da se razlikujeta le za konstantni faktor, saj vzpostavitev povezave in izmenjava podatkov ponavadi zavzema približno enako število paketov. Pri večji obremenjenosti omrežja lahko hitro naraste (paketi so počasnejši, večja verjetnost da se izgubijo).
+
+
+Dolžina vrste v oddajnikih
+
+Vrste v oddajnikih ne smejo postati prevelike. Pri manjših vrednostih le upočasnujejo potovanje paketov, v ekstremnih primerih pa bi lahko prišlo tudi do zapolnitve vrste in izgube paketa (npr. če vrsta stalno narašča, ali pa če veliko klientov na enkrat odda veliko paketov).
+
+
+Število izgubljenih paketov zaradi vrste
+
+To bi pomenilo preobremenjeno omrežje. V naših simulacijah ni prišlo do te vrste izgube paketov.
+
+
+Izgubljeni paketi zaradi napake v prenosu
+
+...
